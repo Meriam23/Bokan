@@ -178,26 +178,24 @@ body {
   width: 30px;
   margin-bottom: 0px;
 }
+@@media only screen and (max-width: 600px) {
+  .floorsDiv {
+    background-color: blue;
+    padding-left: 30%;
+  }
+}
 
 #infos {
-  text-align: left;
-  padding-left: 90px;
+  text-align: center;
   line-height: 2px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 #floors {
-  text-align: center;
-  padding-top: 50px;
+  text-align: left;
+  padding-top: 100px;
 }
-
-.floorsDiv {
-
-  padding-left: 150px;
-
-}
-
 
 .infos-2 {
   margin-top: 50px;
