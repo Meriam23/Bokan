@@ -235,12 +235,9 @@ body {
   display: none;
 }
 
-@media screen and (max-height: 450px) {
-  .liftBtn {
-    margin-left: 60px;
-  }
-  #elevator {
-    margin-left: 60px;
+@media screen and (max-height: 1024px) {
+  .floorsDiv {
+    margin-left: 20%;
   }
 
 }
