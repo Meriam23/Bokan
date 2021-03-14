@@ -27,7 +27,7 @@
     </a>
     <div class="overlay-content">
       <div class="row">
-        <div class="col-sm-6" id="infos">
+        <div class="col-sm-12 col-md-6" id="infos">
           <p>Floor 37-39</p>
           <p>40 Marsh Wall</p>
           <p>London E14 9TP</p>
@@ -50,17 +50,13 @@
 
         </div>
 
-        <div class="col-sm-6" id="floors">
+        <div class="col-sm-12 col-md-6" id="floors">
           <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#rooftop-39">ROOFTOP</a></button>
-
           <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#bar-38">BAR</a></button>
           <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#restaurant-37">RESTAURANT</a></button>
-          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">GALLERY</a></button>
-          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">EVENTS</a></button>
           <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#our-policy">OUR POLICY</a></button>
-          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">LOCATION</a></button>
-          <button class="overlayBtns liftBtn" id="liftBtn00" onclick="timeFunction()"><a href="">CAREERS</a></button>
-          <button class="overlayBtns liftBtn" id="liftBtn01" onclick="timeFunction()"><a href="">GIFTS VOUCHERS</a></button>
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">CAREERS</a></button>
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">GIFTS VOUCHERS</a></button>
 
           <img id="elevator" src="images/elevator.png" alt="" width="35px" />
 
@@ -77,21 +73,26 @@
   <div class="fixed-top myNavbar">
     <div class="row align-items-center">
       <div class="col-sm navBtns">
+        <span class="burgerBtn" style="font-size:35px;cursor:pointer" onclick="openNav()">
+          &#9776;
+        </span>
         <a href="#contact-us">CONTACT</a>
         <a href="#reservations">RESERVATIONS</a>
       </div>
+
       <div class="col-sm brandLogo" id="fullBtn">
-        <span style="font-size:35px;cursor:pointer" onclick="openNav()">
-          <div class="brandLogoText"> BŌKAN &#9776;
-          <h6 class="brandSub">UK SOURCED - EUROPEAN DINING</h6></div>
+        <span>
+          <div class="brandLogoText"><a class="brandLink" href="#">BŌKAN</a></div>
+          <h6 class="brandSub">UK SOURCED - EUROPEAN DINING</h6>
+        </span>
       </div>
-      <div class="col-sm socialLinks"><a class="btn btn-lg btn-social-icon btn-facebook">
+      <div class="col-sm socialLinks"><a target="_blank" href="https://www.facebook.com/BokanLondon/" class="btn btn-lg btn-social-icon btn-facebook">
         <span class="fa fa-facebook"></span>
       </a>
-      <a class="btn btn-lg btn-social-icon btn-instagram">
+      <a target="_blank" href="https://www.instagram.com/bokanlondon/" class="btn btn-lg btn-social-icon btn-instagram">
         <span class="fa fa-instagram"></span>
       </a>
-      <a class="btn btn-lg btn-social-icon btn-tripadvisor">
+      <a target="_blank" href="https://www.tripadvisor.fr/Restaurant_Review-g186338-d12156905-Reviews-Bokan_37_Restaurant-London_England.html" class="btn btn-lg btn-social-icon btn-tripadvisor">
         <span class="fa fa-tripadvisor"></span>
       </a>
       </div>
@@ -107,6 +108,8 @@
 
         <source src="videos/bokan2.mp4"
                 type="video/mp4" />
+
+        <img class="phone-video" src="images/bokan-bar-night.jpg" />
 
         Sorry, your browser doesn't support embedded videos.
     </video>
@@ -167,9 +170,13 @@
         <h1 class="title">RESTAURANT - 37th</h1>
         <p class="resto-p">Indulge and dine amongst industrial dockyard sophistication whilst admiring captivating views of London’s skyline.
            Bōkan 37 creates a warm, inviting & relaxed dining experience with a menu that will take your taste-buds on a journey of European discovery.
-          <br />
-          Florian and his team are proud to offer you an experience that you won't forget.
-        </p>
+         Florian and his team are proud to offer you an experience that you won't forget.</p>
+
+        <h4 class="brunch">BOTTOMLESS BRUNCH - £52 PER PERSON</h4>
+        <p class="resto-p">With a backdrop of stunning views, kick start your weekend with a lavish bottomless brunch. Chef Guillaume has created a seasonal and stylish three-course menu to enjoy alongside endless prosecco in the laid-back yet luxe Bōkan 37 Restaurant.</p>
+
+
+
 
         <p class="resto-p">* Menus are subject to change as Chef Guillaume and his brigade offer you only the best seasonal produce to your table.</p>
         <div class="btnCenter">
@@ -179,7 +186,7 @@
       </div>
 
       <div class="col-lg-6">
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div id="carouselResto" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="images/food-1.jpg" alt="First slide" />
@@ -194,11 +201,11 @@
       <img class="d-block w-100" src="images/food-4.jpg" alt="Fourth slide" />
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselResto" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+  <a class="carousel-control-next" href="#carouselResto" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
@@ -247,6 +254,7 @@
 
 
           <div class="col-lg-6  align-self-center">
+            <div class="white-space"></div>
             <h1 class="title bar-title">BAR - 38th</h1>
             <div class="bar-text">
               <p class="bar-p">Sip unique cocktails, wines, spirits & craft beers in laid-back luxury on the 38th floor.</p>
@@ -363,11 +371,16 @@
 
     <section class="private-hire" id="private-hire">
 
-      <h1 class="title">PRIVATE HIRE</h1>
-      <p class="private-p">We have a range of catering options for any event you might have in mind. From business meetings, working lunches to office parties, intimate occasions to grand birthday celebrations and beyond.
-Please get in touch using the form and a member of the team will be in touch to assist you.
-Our reservation lines are open from 11:00am to 7:30pm (Monday to Friday).
-</p>
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-8 col-lg-6">
+        <h1 class="title">PRIVATE HIRE</h1>
+        <p class="private-p">We have a range of catering options for any event you might have in mind. From business meetings, working lunches to office parties, intimate occasions to grand birthday celebrations and beyond.
+  Please get in touch using the form and a member of the team will be in touch to assist you.
+  Our reservation lines are open from 11:00am to 7:30pm (Monday to Friday).
+  </p>
+      </div>
+    </div>
+
       </section>
 
 
@@ -405,8 +418,11 @@ Our reservation lines are open from 11:00am to 7:30pm (Monday to Friday).
 
     <!-- POLICY SECTION -->
 
-    <section class="policy" id="our-policy">
 
+
+    <section class="policy" id="our-policy">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-8 col-lg-6">
       <h1 class="policy-title">OUR POLICY</h1>
       <ul class="policy-ul">
         <li>
@@ -422,13 +438,15 @@ Our reservation lines are open from 11:00am to 7:30pm (Monday to Friday).
         Guide dogs are welcome in any of our hotel bars and restaurant.
         </li>
         </ul>
+      </div>
+    </div>
       </section>
 
       <footer class="fixed-footer text-muted">
 
     <p>PR Enquiries: bokan@rochecom.com <br />
     Careers: careers@bokanlondon.co.uk</p>
-    <p>© Accor Hotels Ltd 2021</p>
+    <p id="footer-date">© Accor Hotels Ltd</p>
     </footer>
 
 
