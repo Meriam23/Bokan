@@ -1,3 +1,9 @@
+const today = new Date();
+const currentYear = today.getFullYear();
+
+var footerParagraph = document.getElementById("footer-date");
+footerParagraph.textContent += " " + currentYear;
+
 function openNav() {
   document.getElementById(
     "myNav").style.width = "100%";
@@ -46,7 +52,7 @@ function moveLift0() {
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-500px)'
+      transform: 'translateY(-320px)'
     }
   ], {
     duration: 2000,
@@ -58,7 +64,7 @@ function moveLift1() {
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-420px)'
+      transform: 'translateY(-260px)'
     }
   ], {
     duration: 2000,
@@ -70,7 +76,7 @@ function moveLift2() {
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-360px)'
+      transform: 'translateY(-190px)'
     }
   ], {
     duration: 2000,
@@ -82,7 +88,7 @@ function moveLift3() {
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-300px)'
+      transform: 'translateY(-130px)'
     }
   ], {
     duration: 2000,
@@ -94,48 +100,16 @@ function moveLift4() {
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-240px)'
+      transform: 'translateY(-60px)'
     }
   ], {
     duration: 2000,
   });
 }
 
-function moveLift5() {
-  lift.animate([{
-      transform: 'translateY(0px)'
-    },
-    {
-      transform: 'translateY(-180px)'
-    }
-  ], {
-    duration: 1800,
-  });
-}
 
-function moveLift6() {
-  lift.animate([{
-      transform: 'translateY(0px)'
-    },
-    {
-      transform: 'translateY(-120px)'
-    }
-  ], {
-    duration: 1300,
-  });
-}
 
-function moveLift7() {
-  lift.animate([{
-      transform: 'translateY(0px)'
-    },
-    {
-      transform: 'translateY(-55px)'
-    }
-  ], {
-    duration: 1300,
-  });
-}
+
 
 
 liftBtns[0].addEventListener("click", moveLift0);
@@ -143,6 +117,3 @@ liftBtns[1].addEventListener("click", moveLift1);
 liftBtns[2].addEventListener("click", moveLift2);
 liftBtns[3].addEventListener("click", moveLift3);
 liftBtns[4].addEventListener("click", moveLift4);
-liftBtns[5].addEventListener("click", moveLift5);
-liftBtns[6].addEventListener("click", moveLift6);
-liftBtns[7].addEventListener("click", moveLift7);
