@@ -234,7 +234,7 @@ body {
   display: none;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 1024px) {
   .liftBtn {
     margin-left: 30%;
   }
