@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Welcome to Bōkan</title>
+
+  <link rel="icon" type="image/png" href="images/bokan-logo.gif">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- Google Fonts here -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Redressed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      ×
+    </a>
+    <div class="overlay-content">
+      <div class="row">
+        <div class="col-sm-6" id="infos">
+          <p>Floor 37-39</p>
+          <p>40 Marsh Wall</p>
+          <p>London E14 9TP</p>
+          <p class="openingHours"></p>
+          <p>(+44) 123 456 78</p>
+          <div class="infos-2">
+            <p class="dinner">DINNER</p>
+            <p class="openingHours"></p>
+            <p>Sunday-Friday</p>
+            <p>5pm-9:30pm</p>
+            <p class="openingHours"></p>
+            <p>Saturday</p>
+            <p>4pm-9:30pm</p>
+            <p class="openingHours"></p>
+
+            <p>Accor Hotels</p>
+          </div>
+
+
+
+        </div>
+
+        <div class="col-sm-6" id="floors">
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#rooftop-39">ROOFTOP</a></button>
+
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#bar-38">BAR</a></button>
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#restaurant-37">RESTAURANT</a></button>
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">GALLERY</a></button>
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">EVENTS</a></button>
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#our-policy">OUR POLICY</a></button>
+          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#">LOCATION</a></button>
+          <button class="overlayBtns liftBtn" id="liftBtn00" onclick="timeFunction()"><a href="">CAREERS</a></button>
+          <button class="overlayBtns liftBtn" id="liftBtn01" onclick="timeFunction()"><a href="">GIFTS VOUCHERS</a></button>
+
+          <img id="elevator" src="images/elevator.png" alt="" width="35px" />
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="fixed-top myNavbar">
+    <div class="row align-items-center">
+      <div class="col-sm navBtns">
+        <a href="#contact-us">CONTACT</a>
+        <a href="#reservations">RESERVATIONS</a>
+      </div>
+      <div class="col-sm brandLogo" id="fullBtn">
+        <span style="font-size:35px;cursor:pointer" onclick="openNav()">
+          <div class="brandLogoText"> BŌKAN &#9776;
+          <h6 class="brandSub">UK SOURCED - EUROPEAN DINING</h6></div>
+      </div>
+      <div class="col-sm socialLinks"><a class="btn btn-lg btn-social-icon btn-facebook">
+        <span class="fa fa-facebook"></span>
+      </a>
+      <a class="btn btn-lg btn-social-icon btn-instagram">
+        <span class="fa fa-instagram"></span>
+      </a>
+      <a class="btn btn-lg btn-social-icon btn-tripadvisor">
+        <span class="fa fa-tripadvisor"></span>
+      </a>
+      </div>
+    </div>
+  </div>
+
+<!-- VIDEO -->
+
+<video id="video-bg" autoPlay loop muted width="100%" height="100%">
+
+        <source src="videos/bokan.webm"
+                type="video/webm" />
+
+        <source src="videos/bokan2.mp4"
+                type="video/mp4" />
+
+        Sorry, your browser doesn't support embedded videos.
+    </video>
+
+    <section class="about">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+
+            <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="slide-imgs" width="100%" src="images/bokan-about.jpg" alt="" />
+
+                </div>
+                <div class="carousel-item">
+                  <img  class="slide-imgs" width="100%" src="images/bokan-chef.jpg" alt="" />
+
+                </div>
+                <div class="carousel-item">
+                  <img class="slide-imgs"  width="100%" src="images/bokan-view.jpg" alt="" />
+
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselFade" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6  align-self-center">
+            <h1 class="title">ABOUT BOKAN</h1>
+            <div class="chef-div">
+              <h5>CHEF GUILLAUME</h5>
+              <p class="captions">Guillaume Gillan, Executive Chef at Bōkan, brings diverse international experience to the acclaimed sky-high restaurant in Canary Wharf.
+                Set on the 37th floor, the restaurant focuses on contemporary European dining using locally sourced, British ingredients.
+                Growing up in the beautiful city of Nice in the South of France, Guillaume has been passionate about good food since childhood. <br />
+                Growing up, he became friend with Florian, whom he met in Monaco. We are lucky to have him as our beloved Restaurant Manager.
+                Together, they are passionated about giving you the best experience and <span class="aboutSpan">it shows.</span></p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- RESTAURANT -->
+
+
+      <section class="restaurant" id="restaurant-37">
+    <div class="white-space"></div>
+      <div class="row">
+      <div class="col-lg-6 align-self-center">
+        <h1 class="title">RESTAURANT - 37th</h1>
+        <p class="resto-p">Indulge and dine amongst industrial dockyard sophistication whilst admiring captivating views of London’s skyline.
+           Bōkan 37 creates a warm, inviting & relaxed dining experience with a menu that will take your taste-buds on a journey of European discovery.
+          <br />
+          Florian and his team are proud to offer you an experience that you won't forget.
+        </p>
+
+        <p class="resto-p">* Menus are subject to change as Chef Guillaume and his brigade offer you only the best seasonal produce to your table.</p>
+        <div class="btnCenter">
+        <button type="button" class="btn btn-light btn-lg menuResto"><a href="menus/restaurant-menu.pdf" target="_blank">RESTAURANT MENU</a></button>
+        <button type="button" class="btn btn-light btn-lg menuResto"><a href="menus/special-menu.pdf" target="_blank">BRUNCH MENU</a></button>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/food-1.jpg" alt="First slide" />
+        </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/food-2.jpg" alt="Second slide" />
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/food-3.jpg" alt="Third slide" />
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/food-4.jpg" alt="Fourth slide" />
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- BAR SECTION -->
+
+
+    <section class="bar" id="bar-38">
+      <div class="white-space"></div>
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+
+            <div id="carouselBar" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="images/bokan-bar-1.jpg" alt="First slide" />
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/bokan-bar-2.jpg" alt="Second slide" />
+                </div>
+
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/bokan-bar-4.jpg" alt="Fourth slide" />
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="images/bokan-bar-5.jpg" alt="Fifth slide" />
+                </div>
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselBar" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselBar" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+
+
+          <div class="col-lg-6  align-self-center">
+            <h1 class="title bar-title">BAR - 38th</h1>
+            <div class="bar-text">
+              <p class="bar-p">Sip unique cocktails, wines, spirits & craft beers in laid-back luxury on the 38th floor.</p>
+            </div>
+
+            <div class="bar-div">
+              <p class="bar-p">Anchored in the docklands, the award winning bar at Bōkan 38 champions locally distilled spirits, intriguing cocktails, carefully chosen craft beers and an extensive wine list.
+                Admire the impressive views of Canary Wharf and the City of London, whilst indulging in the unique flavours of our enticing food & drink menus.<br />
+                *Only card payments are accepted. Entry is subject to capacity in line with COVID Government regulations. Alcohol can only be served alongside with food.
+              </p>
+              <div class="barCenter">
+              <button type="button" class="btn btn-dark btn-lg menuBtn"><a href="menus/bar-menu.pdf" target="_blank">DRINKS MENU</a></button>
+              <button type="button" class="btn btn-dark btn-lg menuBtn"><a href="menus/sample-wine-list.pdf" target="_blank">WINE LIST</a></button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- ROOFTOP SECTION -->
+
+
+      <section class="rooftop" id="rooftop-39">
+      <div class="row">
+      <div class="col-lg-6 align-self-center">
+        <h1 class="title">ROOFTOP - 39th</h1>
+        <p class="rooftop-p">An easy-going & informal hideaway, transporting you far from the buzz of the busy streets below.
+        The bar and roof terrace at Bōkan 39 features a specialist gin bar, rooftop daybeds, perfect for intimate gatherings, whilst admiring striking views of London.</p>
+        <p class="rooftop-p">Experience impressive views of London at the highest rooftop bar on the 39th floor at Bōkan.
+        Escape to a world far removed from the city below. A hidden gem waiting to be discovered.
+        Lounge in the sky all year round. Perch inside at the rooftop bar or unwind on the terrace.</p>
+      </div>
+
+      <div class="col-lg-6">
+      <div id="carouselRooftop" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/bokan-rooftop-1.jpg" alt="First slide" />
+        </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/bokan-rooftop-1.jpg" alt="Second slide" />
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/bokan-rooftop-1.jpg" alt="Third slide" />
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselRooftop" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselRooftop" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CONTACT SECTION -->
+
+    <section>
+    <div class="contact" id="contact-us">
+    <div class="white-space"></div>
+        <h1 class="title">CONTACT US</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 contact1">
+            <p><i class="fas fa-phone-alt"></i> 020 3530 0550 </p>
+              <p><i class="far fa-envelope"></i> hello@bokanlondon.co.uk</p>
+          </div>
+          <div class="col-sm-6 contact2">
+            <p>Floor 37-39 </p>
+            <p>40 Marsh Wall </p>
+            <p>London E14 9TP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+
+      <div class="contact-form-2 col-md-6 col-lg-5">
+      <form action="/" class="form-signin shadow" method="submit">
+
+        <h6 class="h6 mb-3">Have a specific enquiry? Please use the form below and we will get back to you shortly.</h6>
+
+        <input type="text" name="fullName" class="form-control top" placeholder="Full Name" required />
+
+        <input type="" name="phone" class="form-control middle" placeholder="Phone Number" required />
+
+        <input type="email" name="email" class="form-control middle" placeholder="Email" required />
+
+        <textarea name="comments" id="" cols="50" rows="5"  placeholder="Your message" class="form-control bottom"></textarea>
+
+
+
+
+        <button class="btn btn-lg btn-dark btn-block" type="submit">Submit</button>
+
+      </form>
+      </div>
+      </div>
+
+    </section>
+
+
+    <!-- PRIVATE HIRE -->
+
+
+    <section class="private-hire" id="private-hire">
+
+      <h1 class="title">PRIVATE HIRE</h1>
+      <p class="private-p">We have a range of catering options for any event you might have in mind. From business meetings, working lunches to office parties, intimate occasions to grand birthday celebrations and beyond.
+Please get in touch using the form and a member of the team will be in touch to assist you.
+Our reservation lines are open from 11:00am to 7:30pm (Monday to Friday).
+</p>
+      </section>
+
+
+      <!-- RESERVATIONS SECTION -->
+
+      <section id="reservations">
+  <div class="white-space"></div>
+    <h1 class="title">MAKE YOUR RESERVATION</h1>
+      <div class="reservation">
+        <form class="shadow-lg p-3">
+
+          <input type="text" name="fname" placeholder="First Name" class="form-control top" />
+
+          <input type="text" name="lname" placeholder="Last Name" class="form-control middle" />
+
+          <input type="email" name ='email' placeholder="Email address" class="form-control middle" />
+
+          <input type="tel" placeholder="Phone #" class="form-control middle" />
+
+          <input type='date' placeholder="Date" class="form-control middle"/>
+
+          <input type='time' placeholder="Time" class="form-control middle" />
+
+          <input type="number" placeholder="Guests #" class="form-control middle" />
+
+          <textarea name="comments" id="" cols="50" rows="5"  placeholder="Special Requests" class="form-control bottom"></textarea>
+
+          <button class="btn btn-lg btn-dark btn-block" type="submit">Submit</button>
+
+          </form>
+
+
+      </div>
+    </section>
+
+    <!-- POLICY SECTION -->
+
+    <section class="policy" id="our-policy">
+
+      <h1 class="policy-title">OUR POLICY</h1>
+      <ul class="policy-ul">
+        <li>
+        <span class="li-title">Dress code</span>: <br />
+        Smart casual. Bōkan regret that entry will not be allowed to those wearing flip flops and the team reserves the right to deny entrance should a guest’s attire and overall presentation not adhere to our dress code.
+        </li>
+        <li>
+        <span class="li-title">Age policy</span>: <br />
+        If you are lucky enough to look under 25 you will be asked to prove that you are over 18 when you buy alcohol. Guests under 18 years of age accompanied by their parent / guardian are welcome in Bōkan. Children under 12 years of age accompanied by their parent / guardian are welcome in Bōkan 38 | 39 until 9pm.
+        </li>
+        <li>
+        <span class="li-title">Pet policy</span>: <br />
+        Guide dogs are welcome in any of our hotel bars and restaurant.
+        </li>
+        </ul>
+      </section>
+
+      <footer class="fixed-footer text-muted">
+
+    <p>PR Enquiries: bokan@rochecom.com <br />
+    Careers: careers@bokanlondon.co.uk</p>
+    <p>© Accor Hotels Ltd 2021</p>
+    </footer>
+
+
+
+
+  <!-- Personal JS -->
+  <script src="index.js" charset="utf-8"></script>
+  <!-- Font Awesome Script -->
+  <script src="https://kit.fontawesome.com/c6c6785739.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery Script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <!-- BootStrap Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
