@@ -116,4 +116,4 @@ liftBtns[0].addEventListener("click", moveLift0);
 liftBtns[1].addEventListener("click", moveLift1);
 liftBtns[2].addEventListener("click", moveLift2);
 liftBtns[3].addEventListener("click", moveLift3);
-liftBtns[4].addEventListener("click", moveLift4);
+liftBtns[4].addEventListener("click", moveLift4); 
