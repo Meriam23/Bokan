@@ -234,12 +234,12 @@ body {
   display: none;
 }
 
-@media screen and (max-height: 1024px) {
+@media screen and (max-height: 450px) {
   .liftBtn {
-    margin-left: 30%;
+    margin-left: 20%;
   }
   #elevator {
-    margin-left: 30%;
+    margin-left: 20%;
   }
 
 }
@@ -497,6 +497,16 @@ hr {
   margin: 90px;
   box-shadow: 2px 2px 2px #888888;
 }
+
+@media screen and (max-height: 450px) {
+  .private-hire{
+    margin: 5px;
+  }
+  .policy {
+    margin: 5px;
+  }
+}
+
 
 .private-p {
   font-family: 'Rajdhani', sans-serif;
