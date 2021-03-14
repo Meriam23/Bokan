@@ -177,20 +177,27 @@ body {
   right: 30px;
   width: 30px;
   margin-bottom: 0px;
-
 }
 
 #infos {
-  text-align: center;
+  text-align: left;
+  padding-left: 90px;
   line-height: 2px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 #floors {
-  text-align: left;
-  padding-top: 100px;
+  text-align: center;
+  padding-top: 50px;
 }
+
+.floorsDiv {
+
+  padding-left: 150px;
+
+}
+
 
 .infos-2 {
   margin-top: 50px;
@@ -235,12 +242,6 @@ body {
   display: none;
 }
 
-@media screen and (max-height: 1024px) {
-  .floorsDiv {
-    margin-left: 20%;
-  }
-
-}
 
 /* ABOUT SECTION */
 
