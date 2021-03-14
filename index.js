@@ -1,3 +1,4 @@
+alert("ok");
 const today = new Date();
 const currentYear = today.getFullYear();
 
