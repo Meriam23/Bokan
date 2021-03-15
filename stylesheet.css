@@ -56,7 +56,7 @@ body {
 
 .overlay-content #floors {
   padding-top: 100px;
-  padding-left: 30px;
+  padding-left: 10px;
   font-size: 4vw;
 }
 
@@ -97,6 +97,7 @@ body {
   padding: 3px;
   cursor: pointer;
   text-align: left;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .virtual-v a {
@@ -457,6 +458,7 @@ body {
 @media only screen and (max-width: 768px) {
   .overlay-content #floors {
     padding-top: 230px;
+    padding-right: 5px;
   }
   .overlay-content #infos {
     padding-top: 230px;
