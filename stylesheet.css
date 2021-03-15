@@ -9,6 +9,7 @@ body {
   width: 100vw;
 }
 
+
 .menu {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.0);
@@ -92,14 +93,14 @@ body {
 }
 
 .overlay-content #infos {
-  padding-top: 100px;
+  padding-top: 15%;
   text-align: right;
   padding-right: 30px;
   font-size: 25px;
 }
 
 .overlay-content #floors {
-  padding-top: 100px;
+  padding-top: 15%;
   padding-left: 10px;
   font-size: 25px;
 }
@@ -170,8 +171,6 @@ body {
 .myNavbar {
   background-color: rgba(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2000;
-
 }
 
 .brandSub {
@@ -183,7 +182,6 @@ body {
 }
 
 .brandSub:hover {
-  color: rgb(214, 196, 171);
   cursor: default;
 }
 
@@ -309,7 +307,9 @@ body {
   color: black;
   margin-top: 50px;
   font-size: 18px;
-  padding: 40px;
+  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .aboutSpan:hover {
@@ -486,6 +486,14 @@ body {
 
 }
 
+@media only screen and (min-width: 1140px) {
+  .overlay-content #floors {
+    padding-top: 15%;
+  }
+  .overlay-content #infos {
+    padding-top: 15%;
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .overlay-content #floors {
@@ -512,17 +520,18 @@ body {
 
 @media only screen and (max-width: 768px) {
   .overlay-content {
-    background-color: rgba(0, 0, 0, 0.7);
     height: 100vh;
   }
   .overlay-content #floors {
     padding-left: 1px;
-    font-size: 22px;
+    font-size: 20px;
   }
   .overlay-content #infos {
-    font-size: 22px;
+    font-size: 16px;
     padding-right: 20px;
     line-height: 1.1;
+    position: relative;
+    top: 15px;
   }
   .virtual-v {
     font-size: 16px;
