@@ -31,7 +31,7 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2000;
+  z-index: 1000;
   top: 0;
   left: 0;
   background-color: rgb(184, 151, 127);
@@ -42,7 +42,7 @@ body {
 
 .overlay-content {
   position: relative;
-  top: 18%;
+
   width: 100%;
   text-align: left;
 }
@@ -173,24 +173,39 @@ body {
 
 #elevator {
   position: relative;
-  bottom: 50px;
+  bottom: 0px;
   right: 30px;
   width: 30px;
-  margin-bottom: 0px;
 
+}
+
+.lift-div {
+  height: 1px;
+  width: 90%;
+  background-color: black;
+  margin-bottom: 20px;
 }
 
 #infos {
   text-align: center;
   line-height: 2px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 30px;
+  margin-top: 120px;
+
 }
 
 #floors {
   text-align: left;
-  padding-top: 100px;
+  padding-top: 20px;
+  padding: 70px;
 }
+
+.floorSecond {
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+
 
 .infos-2 {
   margin-top: 50px;
@@ -211,7 +226,6 @@ body {
   color: white;
   padding-right: 20px;
   margin-left: 20px;
-
 }
 
 .navBtns a:hover, .navBtns a:focus {
@@ -233,6 +247,9 @@ body {
 
 #phone-video {
   display: none;
+}
+.liftBtn {
+  margin-left: 40px;
 }
 
 
@@ -375,26 +392,34 @@ body {
 .contact1 {
   line-height: 1.5;
   text-align: right;
+
 }
 
 .contact2 {
   line-height: 1.5;
   text-align: left;
+
 }
 
-@media screen and (max-height: 450px) {
-  .contact1 {
-    text-align: center;
+#image-bg {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+
+
+@media screen (max-width: 768px) {
+  #video-bg {
+    display: none;
   }
-  .contact2 {
-    margin-top: 15px;
-    text-align: center;
-  }
+  #image-bg {
+    display:block;
+    }
 }
 
 hr {
   width: 50%;
-
 }
 .contact-form {
   background-color: white;
@@ -456,6 +481,7 @@ hr {
   border: 1px solid white;
   padding: 20px;
   padding-bottom: 30px;
+  margin-top: 50px;
 }
 .policy-title {
   padding: 40px;
@@ -486,12 +512,16 @@ hr {
 .private-hire {
   text-align: center;
   border: 1px solid white;
-  padding: 10px;
+  padding: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   margin: 15px;
+  margin-bottom: 45px;
+  margin-top: 45px;
   box-shadow: 2px 2px 2px #888888;
 }
+
+
 
 .private-hire-title {
   padding-top: 15px;
@@ -513,4 +543,48 @@ footer {
   padding-bottom: 5px;
   text-align: center;
   font-size: 15px;
+}
+
+/* SPECIAL EVENTS SECTION */
+.events-section {
+  margin:auto;
+  padding-bottom: 60px;
+}
+
+
+.pdf-carousel {
+  margin:auto;
+  width: 400px;
+}
+
+.special-events {
+  font-size: 18px;
+}
+
+
+/* 3D MODEL SECTION */
+
+.model-3d {
+  background-color: white;
+  color: black;
+  padding: 40px;
+  padding-top: 30px;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
