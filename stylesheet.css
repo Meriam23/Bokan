@@ -286,6 +286,7 @@ body {
 
 #video-bg {
   z-index: -10;
+  padding-top: 30px;
 }
 
 #phone-video {
@@ -448,8 +449,8 @@ body {
   display: none;
   position: relative;
   width: 100vw;
-  position: relative;
   top: 200px;
+  margin-bottom: 200px;
 }
 
 
@@ -462,9 +463,10 @@ body {
   }
   #video-bg {
     display: none;
+
   }
   #image-bg {
-    display:block;
+    display: block;
     }
 
 }
