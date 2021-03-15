@@ -40,7 +40,6 @@ body {
   color: white;
   overflow-x: hidden;
   transition: 0.5s;
-
 }
 
 .overlay-content {
@@ -51,13 +50,13 @@ body {
   padding-top: 100px;
   text-align: right;
   padding-right: 30px;
-  font-size: 4vw;
+  font-size: 25px;
 }
 
 .overlay-content #floors {
   padding-top: 100px;
   padding-left: 10px;
-  font-size: 4vw;
+  font-size: 25px;
 }
 
 .o-hours {
@@ -178,8 +177,6 @@ body {
   position: relative;
   top: 5px;
 }
-
-
 
 
 
@@ -452,14 +449,22 @@ body {
   margin-bottom: 200px;
 }
 
+@media only screen and (min-width: 768px) {
+  .overlay-content {
+
+    padding-top: 40px;
+    height: 100vh;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .overlay-content #floors {
-    padding-top: 230px;
-    padding-right: 5px;
+    padding-top: 260px;
+    padding-right: 10px;
+
   }
   .overlay-content #infos {
-    padding-top: 230px;
+    padding-top: 260px;
   }
   #video-bg {
     display: none;
@@ -471,9 +476,11 @@ body {
 
 }
 
+
 @media only screen and (min-width: 600px) {
   .overlay-content #floors {
     padding-top: 160px;
+
   }
   .overlay-content #infos {
     padding-top: 160px;
@@ -483,14 +490,33 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .overlay-content #infos {
-    font-size: 22px;
+.overlay-content #floors {
+  padding-left: 40px;
+}
+.overlay-content #infos {
+  font-size: 20px;
+  padding-right: 60px;
+  line-height: 1.3;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .overlay-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
   }
   .overlay-content #floors {
-    font-size: 25px;
+    padding-left: 45px;
+    font-size: 22px;
   }
-
+  .overlay-content #infos {
+    font-size: 22px;
+    padding-right: 60px;
+    line-height: 1.1;
+  }
+  .virtual-v {
+    font-size: 16px;
+  }
 }
 
 .bookingBtn {
