@@ -221,7 +221,7 @@ body {
   margin-right: 15px;
   position: relative;
   top: 5px;
-  visibility: hidden;
+  color: transparent;
 }
 
 
