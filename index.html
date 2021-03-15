@@ -17,52 +17,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Redressed&display=swap" rel="stylesheet">
+
+
 </head>
+
 
 <body>
 
+
   <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-      ×
-    </a>
     <div class="overlay-content">
       <div class="row">
         <div class="col-6" id="infos">
           <p>Floor 37-39</p>
           <p>40 Marsh Wall</p>
           <p>London E14 9TP</p>
-          <p class="openingHours"></p>
           <p>(+44) 123 456 78</p>
-          <div class="infos-2">
-            <p class="">DINNER</p>
-            <p>Sunday-Friday</p>
-            <p>5pm-9:30pm</p>
-
-            <p>Saturday</p>
-            <p>4pm-9:30pm</p>
 
 
-          </div>
+            <p class="o-hours">OPENING HOURS</p>
+            <p>Monday-Saturday : 6pm-10pm</p>
+            <p>Sunday: 12pm-3pm</p>
+
+
+              <div class="virtual-v">
+                  <a class="btn"  onclick="closeNav()" href="#virtualVisit">
+              Virtual visit :
+              <span class="fas fa-street-view"></span>
+              </a>
+            </div>
+
+
+
+            <div class="white-space"></div>
         </div>
 
         <div class="col-6" id="floors" class="col-floor">
 
-
-          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#rooftop-39">ROOFTOP</a></button>
-          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#bar-38">BAR</a></button>
-          <button class="overlayBtns liftBtn" onclick="timeFunction()"><a href="#restaurant-37">RESTAURANT</a></button>
+          <button class="overlayBtns liftBtn" onclick="closeNav()" ><a href="#rooftop-39">ROOFTOP - 39th</a></button>
+          <button class="overlayBtns liftBtn" onclick="closeNav()" ><a href="#bar-38">BAR - 38th</a></button>
+          <button class="overlayBtns liftBtn" onclick="closeNav()"><a href="#restaurant-37">RESTAURANT - 37th</a></button>
           <!--<img id="elevator" src="images/elevator.png" alt="" width="35px" />
 -->
-
 
           <button class="overlayBtns liftBtn"><a onclick="closeNav()" href="#special-events">SPECIAL EVENTS</a></button>
           <button class="overlayBtns liftBtn"><a onclick="closeNav()" href="#our-policy">OUR POLICY</a></button>
           <button class="overlayBtns liftBtn"><a onclick="closeNav()" target="_blank" href="https://careers.accor.com/global/en">CAREERS</a></button>
           <button class="overlayBtns liftBtn"><a onclick="closeNav()" target="_blank" href="https://bokanlondon.giftpro.co.uk">GIFTS VOUCHERS</a></button>
-
-
-
-
 
         </div>
       </div>
@@ -76,11 +77,12 @@
   <div class="fixed-top myNavbar">
     <div class="row align-items-center">
       <div class="col-sm col-12 navBtns">
-        <span class="burgerBtn" style="font-size:35px;cursor:pointer" onclick="openNav()">
+        <span class="burgerBtn" style="font-size:35px;cursor:pointer" onclick="toggleNav()">
           &#9776;
         </span>
-        <a href="#contact-us">CONTACT</a>
-        <a href="#reservations">RESERVATIONS</a>
+
+        <a class="navBtnsleft" href="#contact-us">CONTACT</a>
+        <a class="bookingBtn navBtnsleft" href="#reservations">RESERVATIONS</a>
       </div>
 
       <div class="col-sm brandLogo" id="fullBtn">
@@ -116,7 +118,7 @@
         Sorry, your browser doesn't support embedded videos.
     </video>
 
-    <img id="image-bg" class="phone-video" src="images/bokan-bar-night.jpg" />
+    <img id="image-bg" class="phone-video" src="images/bokan-mobile-1.jpg" />
 
 
 
@@ -555,7 +557,7 @@
     </section>
 
     <!-- 3D MODEL SECTION -->
-  <section class="model-3d">
+  <section class="model-3d" id="virtualVisit">
     <div class="white-space"></div>
     <h4 class="title model-title">WALK INTO BOKAN</h4>
     <div class="container">
