@@ -11,7 +11,6 @@ body {
 
 
 
-
 /* OVERLAY SECTION */
 
 
@@ -449,6 +448,8 @@ body {
   display: none;
   position: relative;
   width: 100vw;
+  position: relative;
+  top: 200px;
 }
 
 
