@@ -516,7 +516,7 @@ body {
     height: 100vh;
   }
   .overlay-content #floors {
-    padding-left: 20px;
+    padding-left: 1px;
     font-size: 22px;
   }
   .overlay-content #infos {
