@@ -1,4 +1,3 @@
-
 const today = new Date();
 const currentYear = today.getFullYear();
 
@@ -24,7 +23,7 @@ function timeFunction() {
         setTimeout(function(){
           document.getElementById(
             "myNav").style.width = "0%";
-        }, 2100);
+        }, 1050);
     }
 
 // LIFT ANIMATION
@@ -32,7 +31,7 @@ function timeFunction() {
 var lift = document.getElementById("elevator");
 var liftBtns = document.querySelectorAll(".liftBtn");
 
-var delayInMilliseconds = 2000;
+var delayInMilliseconds = 1300;
 
 function closeNavBtns() {
 
@@ -45,18 +44,15 @@ function closeNavBtns() {
 
 
 
-
-
-
 function moveLift0() {
   lift.animate([{
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-320px)'
+      transform: 'translateY(-165px)'
     }
   ], {
-    duration: 2000,
+    duration: 1300,
   });
 }
 
@@ -65,10 +61,10 @@ function moveLift1() {
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-260px)'
+      transform: 'translateY(-110px)'
     }
   ], {
-    duration: 2000,
+    duration: 1300,
   });
 }
 
@@ -77,37 +73,12 @@ function moveLift2() {
       transform: 'translateY(0px)'
     },
     {
-      transform: 'translateY(-190px)'
+      transform: 'translateY(-55px)'
     }
   ], {
-    duration: 2000,
+    duration: 1300,
   });
 }
-
-function moveLift3() {
-  lift.animate([{
-      transform: 'translateY(0px)'
-    },
-    {
-      transform: 'translateY(-130px)'
-    }
-  ], {
-    duration: 2000,
-  });
-}
-
-function moveLift4() {
-  lift.animate([{
-      transform: 'translateY(0px)'
-    },
-    {
-      transform: 'translateY(-60px)'
-    }
-  ], {
-    duration: 2000,
-  });
-}
-
 
 
 
@@ -116,5 +87,3 @@ function moveLift4() {
 liftBtns[0].addEventListener("click", moveLift0);
 liftBtns[1].addEventListener("click", moveLift1);
 liftBtns[2].addEventListener("click", moveLift2);
-liftBtns[3].addEventListener("click", moveLift3);
-liftBtns[4].addEventListener("click", moveLift4); 
