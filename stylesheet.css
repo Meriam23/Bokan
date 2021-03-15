@@ -34,33 +34,48 @@ body {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: rgb(184, 151, 127);
-  background-color: rgba(184, 151, 127, 0.9);
+  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   overflow-x: hidden;
   transition: 0.5s;
+
 }
 
 .overlay-content {
   position: relative;
-
   width: 100%;
-  text-align: left;
+  padding-top: 50px;
 }
 
+.overlay-content #infos {
+  text-align: right;
+  padding-top: 60px;
+  padding-right: 40px;
+}
+
+.overlay-content #floors {
+  text-align: left;
+  padding-top: 70px;
+  position: relative;
+  top: 30px;
+  right: 40px;
+}
+
+
 .overlay a {
-  padding: 8px;
+  padding: 5px;
   text-decoration: none;
-  font-size: 30px;
-  color: black;
+  font-size: 22px;
+  color: white;
   display: block;
   transition: 0.3s;
+  font-weight: 700;
 }
 
 .overlay p {
-  padding: 8px;
   text-decoration: none;
   font-size: 20px;
-  color: black;
   display: block;
   transition: 0.3s;
 }
@@ -68,13 +83,17 @@ body {
 
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
+  transform: scale(1.15);
+  border-bottom-right-radius: 10px;
+
 }
 
 .overlay .closebtn {
   position: absolute;
-  top: 70px;
-  right: 45px;
+  top: 5px;
+  right: 10px;
   font-size: 60px;
+  z-index: 2000;
 }
 
 
@@ -128,6 +147,7 @@ body {
 .burgerBtn {
   margin-left: 20px;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 .burgerBtn:hover {
@@ -171,6 +191,10 @@ body {
   color: white;
 }
 
+
+
+/*
+
 #elevator {
   position: relative;
   bottom: 0px;
@@ -204,6 +228,7 @@ body {
   padding-left: 50px;
   padding-top: 40px;
 }
+*/
 
 
 
@@ -212,20 +237,17 @@ body {
   margin-bottom: 50px;
 }
 
-.openingHours {
-  height: 7px;
-}
+
 .navBtns {
   margin-top: 10px;
   margin-left: 15px;
 }
 .navBtns a {
   font-family: 'Rajdhani', sans-serif;
-  padding-top: 0px;
+
   font-size: 21px;
   color: white;
   padding-right: 20px;
-  margin-left: 20px;
 }
 
 .navBtns a:hover, .navBtns a:focus {
@@ -304,6 +326,7 @@ body {
 }
 #carouselResto {
   margin-top: 20px;
+  margin-right: 20px;
 }
 .brunch {
   font-size: 18px;
@@ -477,8 +500,6 @@ hr {
   font-family: 'Rajdhani', sans-serif;
   font-size: 18px;
   color: #ccc;
-  margin: 30px;
-  border: 1px solid white;
   padding: 20px;
   padding-bottom: 30px;
   margin-top: 50px;
@@ -511,14 +532,14 @@ hr {
 
 .private-hire {
   text-align: center;
-  border: 1px solid white;
+
   padding: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
-  margin: 15px;
+
   margin-bottom: 45px;
   margin-top: 45px;
-  box-shadow: 2px 2px 2px #888888;
+
 }
 
 
@@ -569,6 +590,10 @@ footer {
   color: black;
   padding: 40px;
   padding-top: 30px;
+}
+
+.model-title {
+  margin-bottom: 20px;
 }
 
 .container {
