@@ -250,7 +250,7 @@ body {
   margin-right: 15px;
   position: relative;
   top: 5px;
-  
+
 }
 
 
@@ -563,6 +563,7 @@ hr {
   padding: 20px;
   padding-bottom: 30px;
   margin-top: 50px;
+  justify-content: center;
 }
 .policy-title {
   padding: 40px;
@@ -635,7 +636,7 @@ footer {
 
 .pdf-carousel {
   margin:auto;
-  width: 400px;
+
 }
 
 .special-events {
