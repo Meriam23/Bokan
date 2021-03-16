@@ -130,7 +130,9 @@ body {
   }
 }
 
-
+.phone-number {
+  text-decoration: none;
+}
 
 .o-hours {
   font-weight: 900;
