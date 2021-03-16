@@ -116,6 +116,7 @@ body {
   #infos {
     position: relative;
     bottom: 150px;
+    font-size: 1rem;
   }
 }
 
