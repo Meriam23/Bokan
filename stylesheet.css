@@ -10,6 +10,7 @@ body {
 }
 
 
+
 .menu {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.0);
@@ -111,12 +112,11 @@ body {
   #floors {
     padding-top: 210px;
     padding-left: 20px;
-
   }
   #infos {
     position: relative;
     bottom: 150px;
-    font-size: 1rem;
+    font-size: 19px!important;
   }
 }
 
@@ -130,6 +130,7 @@ body {
   }
 }
 
+
 .phone-number {
   text-decoration: none;
 }
@@ -137,7 +138,7 @@ body {
 .o-hours {
   font-weight: 900;
   font-family: 'Rajdhani', sans-serif;
- 
+  /*border-top: 1px solid white;*/
   padding-top: 10px;
 }
 
