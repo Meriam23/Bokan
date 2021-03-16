@@ -92,18 +92,44 @@ body {
   width: 100%;
 }
 
+.overlay-content .row {
+  width: 100%;
+  flex-direction: row-reverse;
+
+}
+
 .overlay-content #infos {
-  padding-top: 15%;
   text-align: right;
-  padding-right: 30px;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .overlay-content #floors {
-  padding-top: 15%;
-  padding-left: 10px;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+  #floors {
+    padding-top: 210px;
+    padding-left: 20px;
+
+  }
+  #infos {
+    position: relative;
+    bottom: 150px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #floors {
+    padding-top: 15%;
+
+  }
+  #infos {
+    padding-top: 15%;
+  }
+}
+
+
 
 .o-hours {
   font-weight: 900;
@@ -259,11 +285,6 @@ body {
   color: white;
 }
 
-
-
-
-
-
 .navBtns {
   margin-bottom: 5px;
   margin-left: 15px;
@@ -364,7 +385,6 @@ body {
 }
 .resto-p, .rooftop-p, .bar-p {
   font-family: 'Rajdhani', sans-serif;
-
   font-size: 18px;
 }
 
@@ -459,23 +479,10 @@ body {
   margin-bottom: 200px;
 }
 
-@media only screen and (min-width: 768px) {
-  .overlay-content {
 
-    padding-top: 40px;
-    height: 100vh;
-  }
-}
 
 @media only screen and (max-width: 768px) {
-  .overlay-content #floors {
-    padding-top: 260px;
-    padding-right: 10px;
 
-  }
-  .overlay-content #infos {
-    padding-top: 260px;
-  }
   #video-bg {
     display: none;
 
@@ -483,59 +490,6 @@ body {
   #image-bg {
     display: block;
     }
-
-}
-
-@media only screen and (min-width: 1140px) {
-  .overlay-content #floors {
-    padding-top: 15%;
-  }
-  .overlay-content #infos {
-    padding-top: 15%;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .overlay-content #floors {
-    padding-top: 160px;
-
-  }
-  .overlay-content #infos {
-    padding-top: 160px;
-  }
-  .virtual-v {
-    font-size: 17px;
-  }
-}
-
-.overlay-content #floors {
-  padding-left: 40px;
-}
-.overlay-content #infos {
-  font-size: 20px;
-  padding-right: 60px;
-  line-height: 1.3;
-
-}
-
-@media only screen and (max-width: 768px) {
-  .overlay-content {
-    height: 100vh;
-  }
-  .overlay-content #floors {
-    padding-left: 1px;
-    font-size: 20px;
-  }
-  .overlay-content #infos {
-    font-size: 16px;
-    padding-right: 20px;
-    line-height: 1.1;
-    position: relative;
-    top: 15px;
-  }
-  .virtual-v {
-    font-size: 16px;
-  }
 }
 
 .bookingBtn {
@@ -543,7 +497,7 @@ body {
 }
 
 hr {
-  width: 50%;
+  width: 20%;
 }
 .contact-form {
   background-color: white;
