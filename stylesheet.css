@@ -201,6 +201,7 @@ body {
 .myNavbar {
   background-color: rgba(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3000;
 }
 
 .brandSub {
@@ -249,7 +250,7 @@ body {
   margin-right: 15px;
   position: relative;
   top: 5px;
-  color: transparent;
+  
 }
 
 
