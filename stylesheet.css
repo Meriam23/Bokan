@@ -593,14 +593,16 @@ hr {
 
 .private-hire {
   text-align: center;
-
   padding: 30px;
   padding-top: 30px;
-  padding-bottom: 30px;
-
-  margin-bottom: 45px;
   margin-top: 45px;
+}
 
+
+
+.private-hire-img {
+  padding-top: 20px;
+  width: 100%;
 }
 
 
@@ -614,6 +616,7 @@ hr {
   font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
   text-align: justify;
+  padding-bottom: 30px;
 }
 /* FOOTER SECTION */
 
