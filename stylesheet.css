@@ -112,11 +112,14 @@ body {
   #floors {
     padding-top: 210px;
     padding-left: 20px;
+    z-index: 1001;
   }
   #infos {
     position: relative;
-    bottom: 130px;
-    font-size: 19px!important;
+    bottom: 150px;
+    line-height: 1;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 17px!important;
   }
 }
 
@@ -137,7 +140,7 @@ body {
 
 .o-hours {
   font-weight: 900;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Nanum Myeongjo', serif;
   /*border-top: 1px solid white;*/
   padding-top: 10px;
 }
@@ -560,10 +563,9 @@ hr {
   font-family: 'Rajdhani', sans-serif;
   font-size: 18px;
   color: #ccc;
-  padding: 15px;
-  padding-bottom: 30px;
   margin-top: 50px;
   justify-content: center;
+  padding: 15px;
 }
 .policy-title {
   padding: 40px;
@@ -571,11 +573,11 @@ hr {
   text-align: center;
   font-family: 'Nanum Myeongjo', serif;
   text-decoration: overline;
-
 }
 
 .policy-ul {
   list-style: square inside url("./images/bokan-logo0.jpg");
+  padding-inline-start: 0px;
 }
 
 .policy-ul li {
